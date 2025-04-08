@@ -61,12 +61,37 @@ nav a {
 nav a:hover{
     font-size: 1.2rem; 
     color: #F7F6FF;
-    text-decoration: un;
     padding: 0.5rem;
     background-color: #1a2341;
     border-radius: 0.2rem;
 }
 /* End of header styling  */
+
+/* Start of Footer styling */
+footer {
+    background-color: #1a2341;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+footer p a {
+    font-size: .8rem; 
+    text-decoration: none;
+    color: #F7F6FF;
+}
+footer a:hover{
+    font-size: 1.1rem; 
+}
+footer img{
+    max-width: 3rem;
+    width: 100%;
+    height: auto;
+}
+/* End of fotter styles */
+/* End of shared CSS */
 
 /* Below styles applied only to the about.html page - this code is being managed by Emma McC */
 #about-main.container {
