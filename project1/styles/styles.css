@@ -10,7 +10,7 @@ description: index.html, about.html, apply.html, jobs.html
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
-body {
+main {
     padding: 1.5rem;
 }
 @font-face {
@@ -22,6 +22,51 @@ body {
 h1 {
     font-family: NeoDunggeunmo, arial, sans-serif; 
 }
+/* Start of header CSS for styling the nav bar */
+header {
+    background-color: #f7f6ff;
+    padding: 2rem;
+    display: flex; /* Align items in a row */
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between; /* Optional, to space out the items */
+    flex-wrap: wrap;
+}
+header img{
+    max-width: 5rem;
+    width: 100%;
+    height: auto;
+}
+header .button {
+    text-decoration: none;
+    color: #1a2341;
+    border: 1px solid #1a2341;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+    background-color: #F7F6FF;
+}
+header .button:hover{
+    color: #F7F6FF;
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: #1a2341;
+}
+nav a {
+    font-family: NeoDunggeunmo, arial, sans-serif;
+    font-size: 1.2rem; 
+    text-decoration: none;
+    color: #1a2341;
+    margin: 1rem;
+}
+nav a:hover{
+    font-size: 1.2rem; 
+    color: #F7F6FF;
+    text-decoration: un;
+    padding: 0.5rem;
+    background-color: #1a2341;
+    border-radius: 0.2rem;
+}
+/* End of header styling  */
 
 /* Below styles applied only to the about.html page - this code is being managed by Emma McC */
 #about-main.container {
