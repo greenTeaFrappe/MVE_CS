@@ -24,7 +24,7 @@ h1 {
 }
 /* Start of header CSS for styling the nav bar */
 header {
-    background-color: #f7f6ff;
+    background-color: rgba(100, 153, 209, 0.1);
     padding: 2rem;
     display: flex; /* Align items in a row */
     align-items: center; /* Vertically center the items */
@@ -43,7 +43,7 @@ header .button {
     padding: 0.5rem;
     margin: 0.5rem;
     border-radius: 0.2rem;
-    background-color: #F7F6FF;
+    background-color: rgba(100, 153, 209, 0.0);
 }
 header .button:hover{
     color: #F7F6FF;
