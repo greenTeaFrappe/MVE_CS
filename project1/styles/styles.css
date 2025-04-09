@@ -2,7 +2,7 @@
 filename: styles.css
 author: Emma McCormick, Minjin Kim, Vanessa Giuliano, and Aadil Vinod
 created: 07/04/2025
-last modified: 07/04/2025 by EmmaMcC
+last modified: 09/04/2025 by EmmaMcC
 description: index.html, about.html, apply.html, jobs.html
 */
 
@@ -26,9 +26,9 @@ h1 {
 header {
     background-color: rgba(100, 153, 209, 0.1);
     padding: 2rem;
-    display: flex; /* Align items in a row */
-    align-items: center; /* Vertically center the items */
-    justify-content: space-between; /* Optional, to space out the items */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
     flex-wrap: wrap;
 }
 header img{
@@ -124,18 +124,60 @@ footer img{
     flex-basis: 100%;
     align-self: auto;
 }
+#team-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+.blue-h1 {
+    color: #2764B4;
+}
 #about-team table, td, th {
     padding: 0.5rem;
-    border: 0.5px solid rgb(118, 118, 118);
+    border: 0.5px solid #2764B4;
     border-collapse: collapse;
+}
+#about-team caption {
+    text-align: left;
+}
+#about-team table {
+    border-collapse: collapse;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
 }
 #about-team table {
     border-collapse: collapse;
     width: 100%;
     margin: auto;
 }
+#about-team tr:hover{
+    font-size: 1.1rem;
+}
+.tr-odd {
+    background-color: rgba(100, 153, 209, 0.1);
+}
 #team-details img {
     max-width: 400px;
+    width: 100%;
+    padding: 0.2rem;
+    border: 0.5px solid #2764B4;
+}
+#team-details figure {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+}
+#team-details ul li{
+    list-style: none;
+}
+#team-details h4{
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+dd {
+    margin-left: 0;
+    padding-bottom: 0.5rem;
 }
 
 /* Below styles applied only to the job.html page - this code is being managed by Vanessa Giuliano */
