@@ -95,6 +95,7 @@ footer img{
 /* End of shared CSS */
 
 /* Below styles applied only to the about.html page - this code is being managed by Emma McC */
+/* About layout styles */
 #about-main.container {
     display: flex;
     flex-direction: row;
@@ -104,7 +105,7 @@ footer img{
     align-content: normal;
     gap: 0;
 }
-#about-team {
+#about-table {
     order: 0;
     flex-grow: 1;
     flex-shrink: 1;
@@ -131,34 +132,28 @@ footer img{
     align-items: flex-end;
     text-align: right;
 }
-.blue-h1 {
-    color: #2764B4;
-}
-#about-team table, td, th {
+/* About table styles */
+#about-table table, td, th {
     padding: 0.5rem;
     border: 0.5px solid #2764B4;
     border-collapse: collapse;
 }
-#about-team caption {
+#about-table caption {
     text-align: left;
 }
-#about-team table {
+#about-table table {
     border-collapse: collapse;
     max-width: 800px;
     width: 100%;
     margin: auto;
 }
-#about-team table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: auto;
-}
-#about-team tr:hover{
+#about-table tr:hover{
     font-size: 1.1rem;
 }
 .tr-odd {
     background-color: rgba(100, 153, 209, 0.1);
 }
+/* About page, image and list styles */
 #team-details img {
     max-width: 400px;
     width: 100%;
@@ -180,6 +175,7 @@ dd {
     margin-left: 0;
     padding-bottom: 0.5rem;
 }
+/* END of About styles */
 
 /* Below styles applied only to the job.html page - this code is being managed by Vanessa Giuliano */
 article{min-width: 600px;}
