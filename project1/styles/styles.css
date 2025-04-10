@@ -71,7 +71,8 @@ nav a:hover{
 footer {
     width: 100%;
     background-color: #1a2341;
-    padding: 2rem;
+    padding-top: 2rem;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,7 +262,6 @@ article{min-width: 600px;}
 }
 /*styling for aside section*/
 #extra{
-    float: right;
     grid-row: 1 / span 3;
     grid-column: 2;
     border: solid #539FF5;
@@ -272,7 +272,7 @@ article{min-width: 600px;}
     margin-top: 1rem;
     text-align: center;
 }
-
+/*styling for partener logos*/
 #extra img{
     max-width: 8rem;
     width: 100%;
@@ -280,7 +280,8 @@ article{min-width: 600px;}
 }
 /*adjusting layout for smaller screen sizes*/
 @media only screen and (max-width: 600px){
-    #jobcontent{ display: grid;}
+    .button{display: inline-block;}
+    #jobcontent{ display: grid; grid-template-columns: 1;}
     #job1{ border: solid #2764B4;
         border-width: thin;
         border-radius: 0.4rem;
@@ -300,6 +301,8 @@ article{min-width: 600px;}
         margin: 0.5rem;
         margin-top: 1rem;}
     #extra{
+        grid-column: 1;
+        grid-row-start: 4;
         border: solid #539FF5;
         border-width: thin;
         border-radius: 0.4rem;
