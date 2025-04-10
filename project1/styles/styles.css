@@ -204,7 +204,7 @@ article{min-width: 600px;}
 /*styling for button links*/
 .button{
     text-decoration: none;
-    background-color: #2764B4;
+    background-color: #539FF5;
     color:#F7F6FF;
     padding: 0.5rem;
     margin: 0.5rem;
@@ -214,8 +214,13 @@ article{min-width: 600px;}
     color: #F7F6FF;
     text-decoration: none;
     padding: 0.5rem;
-    background-color: #1A2341;
+    background-color: #2764B4;
 }
+
+/*styling for lists*/
+li::marker{color: #2764B4;}
+
+ol ul li{list-style-type: square;}
 
 .job h2, .job h3, .job h4{color: #1A2341;}
 /*styling for job description section*/
@@ -272,12 +277,21 @@ article{min-width: 600px;}
     margin-top: 1rem;
     text-align: center;
 }
-/*styling for partener logos*/
+/*styling for partner logos*/
 #extra img{
     max-width: 8rem;
     width: 100%;
     height: auto;
 }
+hr{color: #539ff5;}
+
+.funfact{
+    color: #2764B4;
+    font-size: 1.1rem;
+}
+
+#partners{font-style: italic;}
+
 /*adjusting layout for smaller screen sizes*/
 @media only screen and (max-width: 600px){
     .button{display: inline-block;}
