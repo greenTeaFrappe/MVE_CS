@@ -8,7 +8,6 @@
         <title>Apply</title>
         <!-- CSS -->
         <link href="styles/styles.css" rel="stylesheet">
-        <link href="styles/apply_style.css" rel="stylesheet">
         <!-- Embedded code -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,16 +24,16 @@
             </nav>
             <a href="mailto:info@pixelprotectors.com.au" class="button">Contact Us</a>
         </header> 
-        <h1>Job <br> application</h1>
+        <h1 id="applyH1">Job <br> application</h1>
         <main>
             <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
-                <fieldset>
+                <fieldset class="applyFieldset">
                     <label for="jobNum">Job reference number</label>
                     <br>
                     <input type="text" id="jobNum" name="jobNum" maxlength="5" pattern="[a-zA-Z]{5}" required="required">
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="applyFieldset">
                     <p id="applicationDetails">
                       <span>
                         <label for="firstName">First Name</label>
@@ -53,9 +52,9 @@
                     </p>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="applyFieldset">
                     <p>Gender</p>
-                    <p>
+                    <p id="gender">
                         <label for="female">Female</label>
                         <input type="radio" id="female" name="Gender" value="female" required="required">
                         <label for="male">Male</label>
@@ -65,75 +64,80 @@
                     </p>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="applyFieldset">
                     <legend>Address</legend>
-
-                    <p>
-                        <label for="streetAddress">Street Address</label>
-                        <input type="text" id="streetAddress" name="streetAddress" maxlength="40" pattern="[a-zA-Z0-9\s,.'-]{1,40}" required="required">
+                    <p id="address1">
+                        <span>
+                            <label for="streetAddress">Street Address</label>
+                            <input type="text" id="streetAddress" name="streetAddress" maxlength="40" pattern="[a-zA-Z0-9\s,.'-]{1,40}" required="required">
+                        </span>
+                        <span>
+                            <label>State</label>
+                            <select name="state" style="width: 205px; height: 41px; margin-top: 20px">
+                                <option value="none" selected disabled>select</option>
+                                <option value="VIC">VIC</option>
+                                <option value="NSW">NSW</option>
+                                <option value="QLD">QLD</option>
+                                <option value="NT">NT</option>
+                                <option value="WA">WA</option>
+                                <option value="SA">SA</option>
+                                <option value="TAS">TAS</option>
+                                <option value="ACT">ACT</option>
+                            </select>
+                        </span>
+                    </p>
+                    
+                    <p id="address2">
+                        <span>
+                            <label for="suburbTown">Suburb/Town</label>
+                            <input type="text" id="suburbTown" name="suburbTown" maxlength="40" pattern="[a-zA-Z0-9\s,.'-]{1,40}" required="required">
+                        </span>
+                        <span>
+                            <label for="postcode">Postcode</label>
+                            <input type="text" id="postcode" name="postcode" pattern="\d{4}" maxlength="4" required>
+                        </span>
                     </p>
 
-                    <p>
-                        <label for="suburbTown">Suburb/Town</label>
-                        <input type="text" id="suburbTown" name="suburbTown" maxlength="40" pattern="[a-zA-Z0-9\s,.'-]{1,40}" required="required">
-                    </p>
-
-                    <p>
-                        <label>State</label>
-                        <select name="state">
-                            <option value="none" selected disabled>select</option>
-                            <option value="VIC">VIC</option>
-                            <option value="NSW">NSW</option>
-                            <option value="QLD">QLD</option>
-                            <option value="NT">NT</option>
-                            <option value="WA">WA</option>
-                            <option value="SA">SA</option>
-                            <option value="TAS">TAS</option>
-                            <option value="ACT">ACT</option>
-                        </select>
-                    </p>
-
-                    <p>
-                        <label for="postcode">Postcode</label>
-                        <input type="text" id="postcode" name="postcode" pattern="\d{4}" maxlength="4" required>
-                    </p>
+                    
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="applyFieldset">
                     <p>Contact</p>
-                    <p>
-                        <label for="email">Email address</label>
-                        <input type="email" id="email" name="email" required="required" placeholder="email@platform">
-                    </p>
-
-                    <p>
-                        <label for="phoneNum">Phone Number</label>
-                        <input type="text" id="phoneNum" name="phoneNum" maxlength="12" pattern="\d{8,12}" required="required" placeholder="0111222333">
+                    <p id="contact">
+                        <span>
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" name="email" required="required" placeholder="email@platform">
+                        </span>
+                        <span>
+                            <label for="phoneNum">Phone Number</label>
+                            <input type="text" id="phoneNum" name="phoneNum" maxlength="12" pattern="\d{8,12}" required="required" placeholder="0111222333">
+                        </span>
                     </p>
                 </fieldset>
 
-                <fieldset>
-                    <legend>Skill</legend>
+                <fieldset class="applyFieldset">
                     <p>Skill</p>
                     <p>
                         <label for="Python">Python</label>
-                        <input type="checkbox" id="Python" name="skill[]" value="Python" checked="checked">
+                        <input type="checkbox" class="skillCheck" id="Python" name="skill[]" value="Python" checked="checked">
                         <label for="Adobe Illustrator">Adobe Illustrator</label>
-                        <input type="checkbox" id="Adobe Illustrator" name="skill[]" value="Adobe Illustrator">
+                        <input type="checkbox" class="skillCheck" id="Adobe Illustrator" name="skill[]" value="Adobe Illustrator">
                         <label for="Java">Java</label>
-                        <input type="checkbox" id="Java" name="skill[]" value="Java">
+                        <input type="checkbox" class="skillCheck" id="Java" name="skill[]" value="Java">
                         <label for="MySQL">MySQL</label>
-                        <input type="checkbox" id="MySQL" name="skill[]" value="MySQL">
+                        <input type="checkbox" class="skillCheck" id="MySQL" name="skill[]" value="MySQL">
                         <label for="otherSkill">Other skill...</label>
-                        <input type="checkbox" id="otherSkill" name="skill[]" value="otherSkill">
+                        <input type="checkbox" class="skillCheck" id="otherSkill" name="skill[]" value="otherSkill">
                     </p>
-
-                    <p>
+                    <br>
+                    <span id="otherSkillText">
                         <label for="otherSkills">Other Skills</label>
                         <input type="text" id="otherSkills" name="otherSkills" maxlength="200" pattern="[a-zA-Z0-9\s,.'-]{1,200}" required="required" placeholder="write your skills">
-                    </p>
+                    </span>
                 </fieldset>
-                <input type="submit" value="Apply">
+                <span id="applySubmit">
+                    <input type="submit" id="submitBtn" value="Apply">
+                </span>
             </form>
         </main>
     </body>
