@@ -182,7 +182,8 @@ dd {
 }
 
 /* Below styles applied only to the job.html page - this code is being managed by Vanessa Giuliano */
-/*styling for page start from Minjin */
+article{min-width: 600px;}
+/*styling for h1 and page start from Minjin */
 #hiring{
         width: auto;
         height: 235px;
@@ -194,17 +195,21 @@ dd {
         align-items: flex-end; /* moves text vertically to end of section*/
         color: #F7F6FF;
         margin-top: 0;
+        font-family: NeoDunggeunmo, arial, sans-serif; 
+        font-variant: normal;
         font-size: 2rem;
 }
-
+/*styling for page description paragraph*/
 #pagedes{
     margin-left: 0.5rem;
     text-align: center;
 }
-
+/*styling for button links*/
 .button{
+    font-family: NeoDunggeunmo, arial, sans-serif;
+    font-size: 1.2rem; 
     text-decoration: none;
-    background-color: #539FF5;
+    background-color: #2764B4;
     color:#F7F6FF;
     padding: 0.5rem;
     margin: 0.5rem;
@@ -214,14 +219,14 @@ dd {
     color: #F7F6FF;
     text-decoration: none;
     padding: 0.5rem;
-    background-color: #2764b4;
+    background-color: #1A2341;
 }
 
 .job h2, .job h3, .job h4{color: #1A2341;}
-
+/*styling for job description section*/
 #jobcontent{
    display: grid;
-   grid-template-columns: 70% 25%;
+   grid-template-columns: 75% 25%;
 }
 
 #job1{
@@ -229,11 +234,11 @@ dd {
     grid-row-start: 1;
     border: solid #2764B4;
     border-width: thin;
-    border-radius: 0.5%;
+    border-radius: 0.4rem;
     padding: 1rem;
+    padding-bottom: 2rem;
     margin: 0.5rem;
     margin-top: 1rem;
-   
 }
 
 #job2{
@@ -241,11 +246,11 @@ dd {
     grid-row-start: 2;
     border: solid #2764B4;
     border-width: thin;
-    border-radius: 0.5%;
+    border-radius: 0.4rem;
     padding: 1rem;
+    padding-bottom: 2rem;
     margin: 0.5rem;
     margin-top: 1rem;
-    
 }
 
 #job3{
@@ -253,19 +258,21 @@ dd {
     grid-row-start: 3;
     border: solid #2764B4;
     border-width: thin;
-    border-radius: 0.5%;
+    border-radius: 0.4rem;
     padding: 1rem;
+    padding-bottom: 2rem;
     margin: 0.5rem;
     margin-top: 1rem;
    
 }
-
+/*styling for aside section*/
 #extra{
+    float: right;
     grid-row: 1 / span 3;
     grid-column: 2;
     border: solid #539FF5;
     border-width: thin;
-    border-radius: 0.5%;
+    border-radius: 0.4rem;
     padding: 1rem;
     margin: 0.5rem;
     margin-top: 1rem;
@@ -277,3 +284,34 @@ dd {
     width: 100%;
     height: auto;
 }
+/*adjusting layout for smaller screen sizes*/
+@media only screen and (max-width: 600px){
+    #jobcontent{ display: grid;}
+    #job1{ border: solid #2764B4;
+        border-width: thin;
+        border-radius: 0.4rem;
+        padding: 1rem;
+        margin: 0.5rem;
+        margin-top: 1rem;}
+     #job2{ border: solid #2764B4;
+        border-width: thin;
+        border-radius: 0.4rem;
+        padding: 1rem;
+        margin: 0.5rem;
+        margin-top: 1rem;}
+     #job3{ border: solid #2764B4;
+        border-width: thin;
+        border-radius: 0.4rem;
+        padding: 1rem;
+        margin: 0.5rem;
+        margin-top: 1rem;}
+    #extra{
+        border: solid #539FF5;
+        border-width: thin;
+        border-radius: 0.4rem;
+        padding: 1rem;
+        margin: 0.5rem;
+        margin-top: 1rem;
+        text-align: center;
+        }
+     }
