@@ -206,8 +206,6 @@ article{min-width: 600px;}
 }
 /*styling for button links*/
 .button{
-    font-family: NeoDunggeunmo, arial, sans-serif;
-    font-size: 1.2rem; 
     text-decoration: none;
     background-color: #2764B4;
     color:#F7F6FF;
