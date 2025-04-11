@@ -66,18 +66,33 @@ nav a:hover{
     border-radius: 0.2rem;
 }
 /* End of header styling  */
-
-#mainhome{
+/*styling for index page background image*/
+#mainhome {
     background-image: url("images/background_image.jpg");
     background-size: cover;
 }
 
-#homecontent{
+#homecontent {
     background-color: white;
-    opacity: 0.9;
+    width: 80%;
     padding: 1.5rem;
+    margin: auto;
+    border-radius: 1.2rem;
 }
 
+#homecontent discription{
+    display: flex;
+    margin: auto;
+}
+
+#homecontent span img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: auto;
+}
+
+/*end of background image styling*/
 /* Start of Footer styling */
 footer {
     width: 100%;
@@ -377,11 +392,11 @@ hr{color: #539ff5;}
         margin-top: 20px; 
     }
     
-    #applicationDetails, #gender, #address1, #address2, #contact   {
+    #applicationDetails, #gender, #address1, #address2, #contact, #homecontent {
         display: flex; gap: 20px;
     }
     
-    #applicationDetails span, #address1 span, #address2 span, #contact span, #otherSkillText{
+    #applicationDetails span, #address1 span, #address2 span, #contact span, #otherSkillText, #homecontent span {
         display: flex; flex-direction: column;
     }
 
