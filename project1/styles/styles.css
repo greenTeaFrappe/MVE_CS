@@ -67,6 +67,17 @@ nav a:hover{
 }
 /* End of header styling  */
 
+#mainhome{
+    background-image: url("images/background_image.jpg");
+    background-size: cover;
+}
+
+#homecontent{
+    background-color: white;
+    opacity: 0.9;
+    padding: 1.5rem;
+}
+
 /* Start of Footer styling */
 footer {
     width: 100%;
