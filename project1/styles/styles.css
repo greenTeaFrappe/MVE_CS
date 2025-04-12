@@ -24,7 +24,7 @@ h1 {
 }
 /* Start of header CSS for styling the nav bar */
 header {
-    background-color: rgba(100, 153, 209, 0.1);
+    background-color: rgba(100, 153, 209, 0.2);
     padding: 2rem;
     display: flex; 
     align-items: center; 
@@ -68,32 +68,58 @@ nav a:hover{
 /* End of header styling  */
 /*styling for index page background image*/
 #mainhome {
-    background-image: url("images/background_image.jpg");
+    background-image: url("images/PP_techBackgroud.jpg");
     background-size: cover;
+    padding: 3rem;
 }
-
-#homecontent {
-    color: black;
-    background-color: #F7F6FF;
-    width: 80%;
+#mainhome .container {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    max-width: 50rem;
     padding: 1.5rem;
-    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     border-radius: 1.2rem;
 }
-
-#homecontent discription{
+#home-jobs {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    align-items: stretch;
+    gap: 0;
+    width: 90%;
+    padding: 1.5rem;
     margin: auto;
 }
-
-#homecontent span img{
+#h-jobs1 {
+    order: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    max-width: 800px;
+    padding-right: 1rem;
+}
+#h-jobs2 {
+    order: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+}
+#h-jobs2 img {
+    max-width: 500px;
     width: 100%;
-    height: auto;
-    display: flex;
-    margin: auto;
+    padding-top: 1rem;
+    float: right;
 }
+#h-jobs2 h3 {
+    display: none;
+}
+/* end of Homepage styles */
 
-/*end of background image styling*/
 /* Start of Footer styling */
 footer {
     width: 100%;
