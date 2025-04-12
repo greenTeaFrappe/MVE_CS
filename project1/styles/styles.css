@@ -323,8 +323,8 @@ hr{color: #539ff5;}
 
 /*adjusting layout for smaller screen sizes*/
 @media only screen and (max-width: 600px){
-    .button{display: inline-block;}
-    #jobcontent{ display: grid; grid-template-columns: 1;}
+    .button{display: block; width: fit-content;}
+    #jobcontent{display: grid;}
     #job1{ border: solid #2764B4;
         border-width: thin;
         border-radius: 0.4rem;
@@ -355,6 +355,7 @@ hr{color: #539ff5;}
         text-align: center;
         }
      }
+     /*end of styling for jobs html*/
 
      /* Below styles applied only to the apply.html page - this code is being managed by Minjin Kim */
 
