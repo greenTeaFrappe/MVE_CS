@@ -73,7 +73,8 @@ nav a:hover{
 }
 
 #homecontent {
-    background-color: white;
+    color: black;
+    background-color: #F7F6FF;
     width: 80%;
     padding: 1.5rem;
     margin: auto;
@@ -216,7 +217,7 @@ article{min-width: 600px;}
         padding: 2rem;
         display: flex; /* Align items in a row */
         align-items: flex-end; /* moves text vertically to end of section*/
-        color: #F7F6FF;
+        color: white;
         margin-top: 0;
         font-family: NeoDunggeunmo, arial, sans-serif; 
         font-variant: normal;
@@ -224,13 +225,14 @@ article{min-width: 600px;}
 }
 /*styling for page description paragraph*/
 #pagedes{
+    font-size: 1.2rem;
     margin-left: 0.5rem;
     text-align: center;
 }
 /*styling for button links*/
 .button{
     text-decoration: none;
-    background-color: #539FF5;
+    background-color: #2764b4;
     color:#F7F6FF;
     padding: 0.5rem;
     margin: 0.5rem;
@@ -241,7 +243,7 @@ article{min-width: 600px;}
     color: #F7F6FF;
     text-decoration: none;
     padding: 0.5rem;
-    background-color: #2764B4;
+    background-color: #1a2341;
 }
 
 /*styling for lists*/
