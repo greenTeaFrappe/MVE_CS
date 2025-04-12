@@ -214,6 +214,7 @@ article{min-width: 600px;}
         background-image: url("../images/banner.png");
         background-size: cover;
         background-position: center;
+        background-color: #1A2341;
         padding: 2rem;
         display: flex; /* Align items in a row */
         align-items: flex-end; /* moves text vertically to end of section*/
