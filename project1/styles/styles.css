@@ -153,6 +153,7 @@ footer img{
     flex-shrink: 1;
     flex-basis: 100%;
     align-self: auto;
+    margin-top: 1.5rem;
 }
 #team-details {
     display: flex;
@@ -161,10 +162,16 @@ footer img{
     text-align: right;
 }
 /* About table styles */
-#about-table table, td, th {
-    padding: 0.5rem;
-    border: 0.5px solid #2764B4;
+#about-tables tbody, td, th, tr {
+    padding: 1rem;
+    border-bottom: 0.5px solid #2764B4;
     border-collapse: collapse;
+    text-align: left;
+}
+#about-table thead th {
+    background-color: #2764B4;
+    color: #F7F6FF;
+    border-right: 1px solid white;
 }
 #about-table caption {
     text-align: left;
@@ -176,14 +183,17 @@ footer img{
     margin: auto;
 }
 #about-table tr:hover{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 .tr-odd {
     background-color: rgba(100, 153, 209, 0.1);
 }
+figcaption {
+    font-size: .8rem; 
+}
 /* About page, image and list styles */
 #team-details img {
-    max-width: 400px;
+    max-width: 450px;
     width: 100%;
     padding: 0.2rem;
     border: 0.5px solid #2764B4;
