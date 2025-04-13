@@ -455,6 +455,7 @@ hr{color: #539ff5;}
     width: 200px;
     height: 50px;
     border: none;
+    border-radius: 0.2rem;
     outline: none;
 }
 
