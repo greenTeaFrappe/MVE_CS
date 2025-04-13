@@ -275,7 +275,7 @@ article{min-width: 600px;}
     margin: 0.5rem;
     border-radius: 0.2rem;
 }
-
+/*colour change when hover over button*/
 .button:hover{
     color: #F7F6FF;
     text-decoration: none;
@@ -289,7 +289,7 @@ li::marker{color: #2764B4;}
 ol ul li{list-style-type: square;}
 
 .job h2, .job h3, .job h4{color: #1A2341;}
-/*styling for job description section*/
+/*styling for job description section in grid layout with borders*/
 #jobcontent{
    display: grid;
    grid-template-columns: 75% 25%;
@@ -350,7 +350,7 @@ ol ul li{list-style-type: square;}
     height: auto;
 }
 hr{color: #539ff5;}
-
+/*Aside facts colour change and bigger font*/
 .funfact{
     color: #2764B4;
     font-size: 1.1rem;
