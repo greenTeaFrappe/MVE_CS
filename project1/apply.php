@@ -14,16 +14,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <img src="images/pixelprotectors_logodrk.svg" alt="pixel protectors logo header" title="Pixel Protectors logo">
-            <nav>
-                <a href="index.html">Home</a> 
-                <a href="jobs.html">Jobs</a> 
-                <a href="apply.html">Applications</a> 
-                <a href="about.html">About Us</a>
-            </nav>
-            <a href="mailto:info@pixelprotectors.com.au" class="button">Contact Us</a>
-        </header> 
+         <!-- Website header including logo, nav and email -->
+         <?php include 'header.inc'; ?>
         <h1 id="applyH1">Job <br> application</h1>
         <main>
             <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
@@ -145,18 +137,7 @@
                 </span>
             </form>
         </main>
-        <footer>
-            <img src="images/pixelprotectors_logolight.svg" alt="pixel protectors logo footer" title="Pixel Protectors logo">
-            <p>
-               <a href="index.html">Home</a><br>
-               <a href="jobs.html">Jobs</a><br> 
-               <a href="apply.html">Applications</a><br> 
-               <a href="about.html">About Us</a>
-            </p>   
-            <p>
-               <a href="https://mvewebassignment.atlassian.net/jira/software/projects/MP1/boards/34?atlOrigin=eyJpIjoiOTY4NjM2ZTkwYzkzNDc5Njg0YWRjZGViZDQyNTNkYjIiLCJwIjoiaiJ9" target="_blank">JIRA Project Management</a><br>
-               <a href="https://github.com/greenTeaFrappe/MVE_WTP" target="_blank">GitHub Repository</a>
-            </p>
-          </footer>
+         <!-- Footer content containing page links, logo and JIRA project link -->
+         <?php include 'footer.inc'; ?>
     </body>
 </html>
