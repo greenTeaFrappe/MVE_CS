@@ -60,7 +60,7 @@
                     <p>Job Title: Cybersecurity Specialist</p>
                     <p>Salary: &dollar;90,000 - 110,000</p>
                     <p>Reference Number: CSS01</p><br>
-                    <a href="apply.html" class="button">Apply now</a>
+                    <a href="apply.php" class="button">Apply now</a>
                     <!-- information on cybersecurity speacialists obtained from https://www.zippia.com/cyber-security-specialist-jobs/-->
             </div>
             <!--Description of data analyst job-->
@@ -96,7 +96,7 @@
                     <p>Job Title: Data Analyst</p>
                     <p>Salary: &dollar;65,000 - 80,000</p>
                     <p>Reference Number: DA002</p><br>
-                    <a href="apply.html" class="button">Apply now</a>
+                    <a href="apply.php" class="button">Apply now</a>
                     <!--information on data analysts obtained from https://www.seek.com.au/job/82560931?ref=search-standalone&type=standard&origin=stickyTitle#sol=046687919b31d24f64b1220a1fba5091e8558dc5 and https://www.zippia.com/data-processing-analyst-jobs/-->
             </div>
             <!--Description of software engineering job-->
@@ -133,7 +133,7 @@
                     <p>Salary: &dollar;82,000 - 110,000</p>
                     <p>Reference Number: SE003</p><br>
                     <!--information on data analysts obtained from https://au.indeed.com/career-advice/finding-a-job/what-does-a-software-engineer-do#:~:text=A%20software%20engineer%20is%20an,to%20Become%20a%20Software%20Developer and https://www.zippia.com/software-engineer-jobs/ -->
-                    <a href="apply.html" class="button">Apply now</a>
+                    <a href="apply.php" class="button">Apply now</a>
             </div>
             <!--side content including facts and statements about the company-->
             <div id="extra">

@@ -40,7 +40,7 @@
          defending data — we&apos;re building a safer digital world. If you&apos;re looking for a supportive, forward-thinking 
          team where your skills truly matter, check out our current job openings. Your next big career move could be 
          just a click away!</p>
-         <a href="jobs.html" class="button">Job Vacancies</a>
+         <a href="jobs.php" class="button">Job Vacancies</a>
       </section>
       <section id="h-jobs2">
             <h3>Company image</h3>
