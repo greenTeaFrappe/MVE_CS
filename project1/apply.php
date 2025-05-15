@@ -129,7 +129,7 @@
                     <br>
                     <span id="otherSkillText">
                         <label for="otherSkills">Other Skills</label>
-                        <input type="text" id="otherSkills" name="otherSkills" maxlength="200" pattern="[a-zA-Z0-9\s,.'-]{1,200}" required="required" placeholder="write your skills">
+                        <input type="text" id="otherSkills" name="otherSkills" maxlength="200" pattern="[a-zA-Z0-9\s,.'-]{1,200}" placeholder="write your skills">
                     </span>
                 </fieldset>
                 <span id="applySubmit">
