@@ -55,7 +55,7 @@
                                 echo "<h3>Requirements:</h3>";
                                 //for loop iterating over each line of responsibilities and its sub list to print them as a list in html
                                 $lines = explode("\n", $row['requirements']);
-                                echo "<ul>";
+                                echo "<ol>";
                                 //for each line in the requirements column if it is a sub list, create a sublist, or else create a regular list item
                                 foreach ($lines as $line) {
                                     $line = trim($line);
@@ -65,7 +65,7 @@
                                         echo "<li>" . $line . "</li>";
                                         }
                                     }
-                                echo "</ul>";
+                                echo "</ol>";
                                 echo "<h3>Key Information:</h3>";
                                 echo "<p>Job Title: $title</p>";
                                 echo "<p>Salary: &dollar;$salary</p>";
