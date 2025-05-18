@@ -1,3 +1,7 @@
+<?php
+    require_once('settings.php');
+    $conn = mysqli_connect($host, $user, $pwd, $sql_db);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,15 +26,20 @@
         <p id="pagedes">Want to join a diverse and supportive team? Discover jobs we currently have openings for!</p>
     </section><br>
    <!--Main page contents including details of jobs-->
+    <?php
+        $query = "SELECT * FROM jobs WHERE id = 1";
+        $result = mysqli_query($conn, $query);
+        $row = mysqli_fetch_assoc($result);
+    ?>
     <article>
-        <a href="#cybersecurity" class="button">Cybersecurity Specialist</a>
+        <a href="#cybersecurity" class="button"><?php echo ($row['title']); ?></a>
         <a href="#analyst" class="button">Data Analyst</a>
         <a href="#software" class="button">Software Engineer</a>
         <div id="jobcontent">
             <!--Description for cyber security specialist job-->
             <div id="job1">
-                    <h2 id="cybersecurity"><strong>Cybersecurity Specialist</strong></h2>
-                    <p>Protect computers and data from hackers. As a cybersecurity specialist you will help maintain secure infrastructures and manage cyber attacks. You will work under and report to our Security Director.</p>
+                    <h2 id="cybersecurity"><strong><?php echo ($row['title']); ?></strong></h2>
+                    <p><?php echo ($row['description']); ?></p>
                     <!--list of responsibilities for job-->
                     <h3>Resonsibilities:</h3>
                     <ul>
@@ -57,16 +66,16 @@
                     </ol>
                     <!--key info points of job-->
                     <h3>Key Information:</h3>
-                    <p>Job Title: Cybersecurity Specialist</p>
-                    <p>Salary: &dollar;90,000 - 110,000</p>
-                    <p>Reference Number: CSS01</p><br>
+                    <p>Job Title: <?php echo ($row['title']); ?></p>
+                    <p>Salary: &dollar;<?php echo ($row['salary']); ?></p>
+                    <p>Reference Number: <?php echo ($row['ref_number']); ?></p><br>
                     <a href="apply.php" class="button">Apply now</a>
                     <!-- information on cybersecurity speacialists obtained from https://www.zippia.com/cyber-security-specialist-jobs/-->
             </div>
             <!--Description of data analyst job-->
             <div id="job2">
                     <h2 id="analyst"><strong>Data Analyst</strong></h2>
-                    <p>Working with us as a Data Analyst you will process and interpret data to help us make informed decisions. You will work in the Data Analysis team, under the guidance of a Senior Analyst.</p>
+                    <p><?php echo ($row['description']); ?></p>
                     <!--list of responsibilities for job-->
                     <h3>Resonsibilities:</h3>
                     <ul>
@@ -158,6 +167,6 @@
         </div>
     </article>
      <!-- Footer content containing page links, logo and JIRA project link -->
-     <?php include 'footer.inc'; ?>
+     <?php include 'footer.inc'; ?>     
 </body>
 </html>
