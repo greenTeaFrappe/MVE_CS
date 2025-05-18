@@ -29,9 +29,11 @@
     <article>
             <?php
                 echo "<div id='jobcontent'>";
+                    //accessing job info from the jobs table in the database
                     $query = "SELECT * FROM jobs";
                     $result = mysqli_query($conn, $query);
                     if ($result && mysqli_num_rows($result) > 0) {
+                        //complete while loop for each row of the jobs table 
                         while($row = mysqli_fetch_assoc($result)) {
                             $id = ($row['id']);
                             $title = ($row['title']);
