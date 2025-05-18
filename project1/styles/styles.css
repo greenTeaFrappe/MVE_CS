@@ -288,7 +288,8 @@ li::marker{color: #2764B4;}
 
 ol ul li{list-style-type: square;}
 
-.job h2, .job h3, .job h4{color: #1A2341;}
+#jobcontent h2, #jobcontent h3, #jobcontent h4{color: #1A2341;}
+
 /*styling for job description section in grid layout with borders*/
 #jobcontent{
    display: grid;
