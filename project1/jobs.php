@@ -28,12 +28,22 @@
    <!--Main page contents including details of jobs-->
     <article>
             <?php
+                // creating dynamic button links to job desciptions
+                $query = "SELECT id, title FROM jobs";
+                $result = mysqli_query($conn, $query);
+                if ($result && mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        $id = $row['id'];
+                        $title = $row['title'];
+                        echo "<a class='button' href='#job" . $id . "'>$title</a>";
+                    }
+                }
                 echo "<div id='jobcontent'>";
-                    //accessing job info from the jobs table in the database
+                    // accessing job info from the jobs table in the database
                     $query = "SELECT * FROM jobs";
                     $result = mysqli_query($conn, $query);
                     if ($result && mysqli_num_rows($result) > 0) {
-                        //complete while loop for each row of the jobs table 
+                        // complete while loop for each row of the jobs table 
                         while($row = mysqli_fetch_assoc($result)) {
                             $id = ($row['id']);
                             $title = ($row['title']);
