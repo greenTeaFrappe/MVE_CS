@@ -28,7 +28,7 @@
    <!--Main page contents including details of jobs-->
     <article>
             <?php
-                // creating dynamic button links to job desciptions
+                // creating dynamic button links to job desciptions from database
                 $query = "SELECT id, title FROM jobs";
                 $result = mysqli_query($conn, $query);
                 if ($result && mysqli_num_rows($result) > 0) {
@@ -51,7 +51,7 @@
                             $salary = ($row['salary']);
                             $ref_number = ($row['ref_number']);
                             echo "<div id='job" . $id . "'>";
-                                echo "<h2>$title</h2>";
+                                echo "<h2><strong>$title</strong></h2>";
                                 echo "<p>$description</p>";
                                 echo "<h3>Resonsibilities:</h3>";
                                 //for loop iterating over each line of responsibilities to print them as a list in html
@@ -66,7 +66,7 @@
                                 //for loop iterating over each line of responsibilities and its sub list to print them as a list in html
                                 $lines = explode("\n", $row['requirements']);
                                 echo "<ol>";
-                                //for each line in the requirements column if it is a sub list, create a sublist, or else create a regular list item
+                                //for each sub line in the requirements column create a sublist, or else create a regular list item
                                 foreach ($lines as $line) {
                                     $line = trim($line);
                                         if (str_starts_with($line, '- ')) {
@@ -76,6 +76,7 @@
                                         }
                                     }
                                 echo "</ol>";
+                                // key information about job
                                 echo "<h3>Key Information:</h3>";
                                 echo "<p>Job Title: $title</p>";
                                 echo "<p>Salary: &dollar;$salary</p>";
@@ -99,9 +100,10 @@
                             <p>At Pixel Protectors, our people are the heart of our success, and we deeply value their contributions. We are committed to fostering a supportive and inclusive environment where every individual feels respected, valued, and empowered to thrive. We believe in investing in our employees&apos; growth through continuous learning opportunities, providing fair compensation and benefits, and prioritising their well-being. Open communication, collaboration, and a culture of trust are fundamental to how we operate, ensuring that every team member has a voice and the opportunity to make a meaningful impact. We strive to create a workplace where individuals can build fulfilling careers and feel a strong sense of belonging.</p>
                             <br><hr><br>
                             <p id="partners">Leading the way with our amazing partners!</p>
-                            <img src="images/github_logo.png" alt="The GitHub logo" loading="lazy"><br>
-                            <img src="images/RSM_logo..jpg" alt="The RSM global logo" loading="lazy"><br>
-                            <img src="images/swin_logo.png" alt="The Swinburne University logo" loading="lazy">
+                            <!--images and links to partner webistes-->
+                            <a href="https://github.com" target="_blank" title="GitHub"><img src="images/github_logo.png" alt="The GitHub logo" loading="lazy"><br></a>
+                            <a href="https://www.rsm.global" target="_blank" title="RSM Global"><img src="images/RSM_logo..jpg" alt="The RSM global logo" loading="lazy"></a><br>
+                            <a href="https://www.swinburne.edu.au" target="_blank" title="Swinburne University of Technology"><img src="images/swin_logo.png" alt="The Swinburne University logo" loading="lazy"></a>
                             <!--images from Github, RSM Global and Swinburne University websites-->
                         </aside>
                     </div>
