@@ -2,8 +2,8 @@
 filename: styles.css
 author: Emma McCormick, Minjin Kim, Vanessa Giuliano, and Aadil Vinod
 created: 07/04/2025
-last modified: 12/04/2025 by Emma McCormick
-description: index.html, about.html, apply.html, jobs.html
+last modified: 20/05/2025 by Emma McCormick
+description: index.php, about.php, apply.php, jobs.phph, manage.php
 */
 
 /* Below are css styles shared across the whole Pixel Protectors website */
@@ -471,4 +471,37 @@ hr{color: #539ff5;}
 
 .legends{
     display: none;
+}
+
+/* Manage.php styles */
+button.search-button {
+    color: #F7F6FF;
+    background-color: #2764b4;
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 0.2rem;
+    outline: none;
+}
+button.search-button:hover {
+    background-color: #1a2341;
+}
+
+button.delete-button {
+    color: #e60000;
+    background-color: white;
+    width: 300px;
+    height: 35px;
+    border: 1px solid #e60000;
+    border-radius: 0.2rem;
+    outline: none;
+}
+button.delete-button:hover {
+    color: #F7F6FF;
+    background-color: #e60000;
+    width: 300px;
+    height: 35px;
+    border: none;
+    border-radius: 0.2rem;
+    outline: none;
 }
