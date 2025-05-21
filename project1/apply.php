@@ -18,7 +18,7 @@
          <?php include 'header.inc'; ?>
         <h1 id="applyH1">Job <br> application</h1>
         <main>
-            <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+            <form action="process_eoi.php" method="POST">
                 <fieldset class="applyFieldset">
                     <legend class="legends">job number</legend>
                     <label for="jobNum">Job reference number</label>
