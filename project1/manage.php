@@ -1,4 +1,6 @@
 <?php
+session_start();
+
     require_once('settings.php');
     $conn = mysqli_connect($host, $user, $pwd, $sql_db);
     // check if connection failed 
@@ -80,7 +82,14 @@ while ($row = mysqli_fetch_assoc($result)) {
 <body>
     <!-- Website header including logo, nav and email -->
     <?php include 'header.inc'; ?>
-    
+
+    <!-- Login successful and logout option -->
+    <?php if (isset($_SESSION['username'])) {
+            echo '<p>Logged in as ' . $_SESSION['username'] . ' | <a href="logout.php">Logout</a></p>';
+    }
+    ?>        
+
+    <br>
     <h1>Manage EOIs</h1>
 
     <!-- Search Form -->
@@ -169,6 +178,9 @@ while ($row = mysqli_fetch_assoc($result)) {
             <?php endif; ?>
         </tbody>
     </table>
+    <br>
+    <br>
+    <br>
 
     <?php mysqli_close($conn); ?>
     
