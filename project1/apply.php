@@ -23,7 +23,16 @@
                     <legend class="legends">job number</legend>
                     <label for="jobNum">Job reference number</label>
                     <br>
-                    <input type="text" id="jobNum" name="jobNum" maxlength="5" pattern="[a-zA-Z]{5}" required="required">
+                        <select id="jobNum" name="jobNum" style="width: 205px; height: 41px; margin-top: 20px">
+                            <option value="none" selected disabled>select</option>
+                            <option value="G01">Software Developer</option>
+                            <option value="G02">Network Administrator</option>
+                            <option value="G03">Data Analyst</option>
+                            <option value="G04">Cybersecurity Specialist</option>
+                            <option value="G05">IT Support Technician</option>
+                            <option value="G06">Cloud Engineer</option>
+                            <option value="G07">AI/ML Engineer</option>
+                            
                 </fieldset>
 
                 <fieldset class="applyFieldset">
