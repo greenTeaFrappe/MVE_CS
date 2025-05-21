@@ -32,7 +32,7 @@
                             <option value="G05">IT Support Technician</option>
                             <option value="G06">Cloud Engineer</option>
                             <option value="G07">AI/ML Engineer</option>
-                            
+                        </select>
                 </fieldset>
 
                 <fieldset class="applyFieldset">
