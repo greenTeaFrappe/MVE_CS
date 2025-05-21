@@ -145,6 +145,11 @@ footer img{
     width: 100%;
     height: auto;
 }
+#admin{
+    max-width: 1.5rem;
+    width: 100%;
+    height: auto;
+}
 /* End of footer styles */
 /* End of shared CSS */
 

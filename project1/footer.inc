@@ -6,7 +6,8 @@
          <a href="jobs.php">Jobs</a><br> 
          <a href="apply.php">Applications</a><br> 
          <a href="about.php">About Us</a>
-    </p>   
+    </p> 
+    <p><a href="login.php"><img src="images/login_icon.svg" alt="login" id="admin"> Admin Login</button></a></p>  
     <p>
          <a href="https://mvewebassignment.atlassian.net/jira/software/projects/MP1/boards/34?atlOrigin=eyJpIjoiOTY4NjM2ZTkwYzkzNDc5Njg0YWRjZGViZDQyNTNkYjIiLCJwIjoiaiJ9" target="_blank">JIRA Project Management</a><br>
          <a href="https://github.com/greenTeaFrappe/MVE_WTP" target="_blank">GitHub Repository</a>
