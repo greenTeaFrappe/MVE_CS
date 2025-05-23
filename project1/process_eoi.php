@@ -80,12 +80,12 @@ if (empty($_POST["DoB"])) {
     }
 }
 
-if (empty($_POST["gender"])) {
+if (empty($_POST["Gender"])) {
     $errors[] = "Gender is required";
 } else {
-    $gender = clean_input($_POST["gender"]);
+    $gender = clean_input($_POST["Gender"]);
     // check if gender is matching with value set in apply.php
-    if (!in_array($gender, ['male', 'female', 'notSelected'])) {
+    if (!in_array($gender, ['female', 'male', 'notSelected'])) {
         $errors[] = "Invalid Gender";
     }
 }
@@ -149,10 +149,16 @@ $adobe = in_array("Adobe Illustrator", $skills) ? "Yes" : "No";
 $java = in_array("Java", $skills) ? "Yes" : "No";
 $mysql = in_array("MySQL", $skills) ? "Yes" : "No";
 
-if(empty($skills)){
-    $otherSkills = isset($_POST['otherSkills']) ? clean_input($_POST['otherSkills']) : $errors[]="Other skills is required";
+// if skills array is empty, requires other skills input.
+if (empty($skills)) {
+    if ((empty($_POST["otherSkills"]))) {
+        $errors[] = "Other skills is required";
+    } else {
+        $otherSkills = isset($_POST['otherSkills']);
+    }
+} else {
+    $otherSkills = isset($_POST['otherSkills']) ? clean_input($_POST['otherSkills']) : '';
 }
-$otherSkills = isset($_POST['otherSkills']) ? clean_input($_POST['otherSkills']) : '';
 
 if (!empty($errors)) {
     echo "<h1>Form Validation Error</h1>";
@@ -218,6 +224,7 @@ if ($inResult) {
             if ($java == "Yes") echo "JAVA. ";
             if ($mysql == "Yes") echo "MySQL. ";
             echo "</p>";
+            echo "<a href=\"about.php\">Go to about page</a>";
         }
     } else {
         $_SESSION['error'] = "Invalid info. Please try again";
