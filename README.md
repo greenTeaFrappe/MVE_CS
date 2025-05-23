@@ -8,7 +8,6 @@
 - Minjin : Team leader, Home page, CSS
 - Vanessa Giuliano : Home page, CSS
 - Emma McCormick : Home page, CSS
-- Aadil Vinod : Home page, CSS
 
 --- 
 
