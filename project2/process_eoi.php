@@ -206,6 +206,8 @@ if ($inResult) {
     $selEOInumResult = $selEOInumStmt->get_result();
 
     // display info of applicant has current eoinumber 
+    // fetch_assoc() : Fetch the next row of a result set as an associative array
+    // use fetch_assoc() bcuz php can't read sql result 
     if ($user = $selEOInumResult->fetch_assoc()) {
         $_SESSION['EOInumber'] = $eoiNumber;
         if (isset($_SESSION['EOInumber'])) {
