@@ -1,5 +1,5 @@
 # MVE Web Project
-![header](https://capsule-render.vercel.app/api?type=soft&height=300&color=gradient&text=MVE%20-%20COS10026%20Project&desc=part%20(Cybersecurity%20Specialist)&descAlignY=71&fontSize=60)
+![header](https://capsule-render.vercel.app/api?type=soft&height=300&color=gradient&text=MVE%20-%20COS10026%20Project&desc=Pixcel Protectors(Cybersecurity%20Specialist)&descAlignY=71&fontSize=60)
 - Develop an IT company Website
 
 <br>
