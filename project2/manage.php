@@ -128,15 +128,13 @@ while ($row = mysqli_fetch_assoc($result)) {
     <?php endif; ?>
 
     <!-- EOIs Table -->
-    <table>
+    <table id="manage-table">
         <thead>
             <tr>
                 <th>EOI Number</th>
                 <th>Job Reference</th>
                 <th>First Name</th>
                 <th>Last Name</th>
-                <th>DOB</th>
-                <th>Gender</th>
                 <th>Address</th>
                 <th>Email</th>
                 <th>Phone Number</th>
@@ -153,12 +151,36 @@ while ($row = mysqli_fetch_assoc($result)) {
                         <td><?= htmlspecialchars($row['JobReferenceNumber']) ?></td>
                         <td><?= htmlspecialchars($row['FirstName']) ?></td>
                         <td><?= htmlspecialchars($row['LastName']) ?></td>
-                        <td><?= htmlspecialchars($row['DateOfBirth']) ?></td>
-                        <td><?= htmlspecialchars($row['Gender']) ?></td>
                         <td><?= htmlspecialchars("{$row['StreetAddress']}, {$row['Suburb']}, {$row['State']} {$row['Postcode']}") ?></td>
                         <td><?= htmlspecialchars($row['Email']) ?></td>
                         <td><?= htmlspecialchars($row['PhoneNumber']) ?></td>
-                        <td><?= htmlspecialchars("{$row['Python']}, {$row['Adobe_Illustrator']}, {$row['JAVA']} {$row['MySQL']}") ?>
+                        <td>
+                            <?php
+                            // List of skill fields in the database
+                            $skills = ['Python', 'Adobe_Illustrator', 'Java', 'MySQL'];
+
+                            // Initialize an array to hold the names of skills the applicant has
+                            $applicantSkills = [];
+
+                            // Loop through each skill and check if the applicant has it
+                            foreach ($skills as $skill) {
+                                // Check if the applicant has the current skill
+                                if ($row[$skill] == 'Yes') {
+                                    // Add the skill name to the array
+                                    $applicantSkills[] = $skill;
+                                }
+                            }
+
+                            // If the applicant has any skills, display them
+                            if (!empty($applicantSkills)) {
+                                // Join the skill names with commas and display them
+                                echo htmlspecialchars(implode(', ', $applicantSkills));
+                            } else {
+                                // If no skills, display 'None'
+                                echo 'None';
+                            }
+                            ?>
+                        </td>
                         <td><?= htmlspecialchars($row['OtherSkills']) ?></td>
                         <td>
                             <form method="post" style="display:inline;">
