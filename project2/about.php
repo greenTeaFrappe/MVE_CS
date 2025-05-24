@@ -128,13 +128,13 @@
                <h3>Roles and Responsibilities</h3>
                <dl>
                   <dt><strong>Minjin</strong></dt>
-                     <dd>Group leader, developed <em>Application</em> HTML page and CSS styles.</dd>
+                     <dd>Group leader.<br>Developed all HTML, PHP, and CSS used on <em>apply.php</em> and <em>process_eoi.php</em>.<br>Created <em>eoi table</em> in MySQL database.</dd>
                   <dt><strong>Vanessa</strong></dt>
-                     <dd>Developed <em>Job</em> HTML page and CSS styles.</dd>
+                     <dd>Developed all HTML, PHP, and CSS used on <em>jobs.php</em>.<br>Coverted header and footer into <em>.inc</em> files.<br>Created <em>jobs table</em> in MySQL database.</dd>
                   <dt><strong>Emma</strong></dt>
-                     <dd>Developed <em>About</em> HTML page and CSS styles, developed header and footer.</dd>
+                     <dd>Developed header and footer HTML and CSS.<br>Developed all HTML, PHP, and CSS used on <em>about.php</em>, <em>manage.php</em>, <em>login.php</em>, and <em>logout.php</em>.<br>Created <em>user table</em> in MySQL database.</dd>
                   <dt><strong>Team</strong></dt>
-                     <dd>Developed <em>Homepage</em> HTML page and general site styles guides.</dd>
+                     <dd>Developed <em>index.php</em>.<br>Created general site styles guides.<br>Group presentation.</dd>
                </dl>
             </section>
          </div>
