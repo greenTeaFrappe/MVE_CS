@@ -27,13 +27,9 @@
                 <br>
                 <select id="jobNum" name="jobNum" style="width: 205px; height: 41px; margin-top: 20px">
                     <option value="none" selected disabled>select</option>
-                    <option value="G01">Software Developer</option>
-                    <option value="G02">Network Administrator</option>
-                    <option value="G03">Data Analyst</option>
-                    <option value="G04">Cybersecurity Specialist</option>
-                    <option value="G05">IT Support Technician</option>
-                    <option value="G06">Cloud Engineer</option>
-                    <option value="G07">AI/ML Engineer</option>
+                    <option value="01_CybersecuritySpecialist">Cybersecurity Specialist</option>
+                    <option value="02_DataAnalyst">Data Analyst</option>
+                    <option value="03_SoftwareEngineer">Software Engineer</option>
                 </select>
             </fieldset>
 
