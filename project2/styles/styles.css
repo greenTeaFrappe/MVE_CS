@@ -2,8 +2,8 @@
 filename: styles.css
 author: Emma McCormick, Minjin Kim, Vanessa Giuliano, and Aadil Vinod
 created: 07/04/2025
-last modified: 20/05/2025 by Emma McCormick
-description: index.php, about.php, apply.php, jobs.phph, manage.php
+last modified: 24/05/2025 by Emma McCormick
+description: index.php, about.php, apply.php, jobs.phph, manage.php, login.php
 */
 
 /* Below are css styles shared across the whole Pixel Protectors website */
@@ -214,7 +214,7 @@ footer img{
     margin: auto;
 }
 #about-table tr:hover{
-    font-size: 1.3rem;
+    background-color: lightgray;
 }
 .tr-odd {
     background-color: rgba(100, 153, 209, 0.1);
@@ -478,7 +478,7 @@ hr{color: #539ff5;}
     display: none;
 }
 
-/* Manage.php styles */
+/* Below styles applied only to the manage.php page - this code is being managed by Emma McC */
 button.search-button {
     color: #F7F6FF;
     background-color: #2764b4;
@@ -509,4 +509,23 @@ button.delete-button:hover {
     border: none;
     border-radius: 0.2rem;
     outline: none;
+}
+#manage-table td, th, tr {
+    padding: 1rem;
+    border-bottom: 0.5px solid #2764B4;
+    border-collapse: collapse;
+    text-align: left;
+}
+#manage-table thead th {
+    background-color: #2764B4;
+    color: #F7F6FF;
+    border-right: 1px solid white;
+}
+#manage-table table {
+    border-collapse: collapse;
+    max-width: 100%px;
+    margin: auto;
+}
+#manage-table tr:hover{
+    background-color: lightgray;
 }
