@@ -35,7 +35,7 @@
                 // creating dynamic button links to job desciptions from database
                 $query = "SELECT id, title FROM jobs";
                 $result = mysqli_query($conn, $query);
-                if ($result && mysqli_num_rows($result) > 0) {
+                if ($result && mysqli_num_rows($result) > 0) { //result returns anything and table is not empty
                     while ($row = mysqli_fetch_assoc($result)) {
                         $id = $row['id'];
                         $title = $row['title'];
@@ -48,7 +48,7 @@
                     $result = mysqli_query($conn, $query);
                     if ($result && mysqli_num_rows($result) > 0) {
                         // complete while loop for each row of the jobs table 
-                        while($row = mysqli_fetch_assoc($result)) {
+                        while($row = mysqli_fetch_assoc($result)) { //each rows fields as array
                             $id = ($row['id']);
                             $title = ($row['title']);
                             $description = ($row['description']);
@@ -59,7 +59,7 @@
                                 echo "<p>$description</p>";
                                 echo "<h3>Resonsibilities:</h3>";
                                 //for loop iterating over each line of responsibilities to print them as a list in html
-                                $lines = explode("\n", $row['responsibilites']);
+                                $lines = explode("\n", $row['responsibilites']); //splits into strings each newline 
                                 echo "<ul>";
                                 foreach ($lines as $line) {
                                     $line = trim($line);
@@ -67,14 +67,14 @@
                                 }
                                 echo "</ul>";
                                 echo "<h3>Requirements:</h3>";
-                                //for loop iterating over each line of responsibilities and its sub list to print them as a list in html
-                                $lines = explode("\n", $row['requirements']);
+                                //responsibilities and its sub list
+                                $lines = explode("\n", $row['requirements']); //split to array
                                 echo "<ol>";
                                 //for each sub line in the requirements column create a sublist, or else create a regular list item
                                 foreach ($lines as $line) {
-                                    $line = trim($line);
-                                        if (str_starts_with($line, '- ')) {
-                                            echo "<ul><li>" . substr($line, 2) . "</li></ul>";
+                                    $line = trim($line); 
+                                        if (str_starts_with($line, '- ')) { //identify sub lists
+                                            echo "<ul><li>" . substr($line, 2) . "</li></ul>"; //removes dash
                                         } else {
                                         echo "<li>" . $line . "</li>";
                                         }
