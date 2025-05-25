@@ -32,7 +32,7 @@
    <!--Main page contents including details of jobs-->
     <article>
             <?php
-                // creating dynamic button links to job desciptions from database
+                // creating dynamic button links to desciptions from database
                 $query = "SELECT id, title FROM jobs";
                 $result = mysqli_query($conn, $query);
                 if ($result && mysqli_num_rows($result) > 0) { //result returns anything and table is not empty
