@@ -116,7 +116,6 @@
                         <li>Minjin Kim - 105686638</li>
                         <li>Vanessa Giuliano - 105853801</li>
                         <li>Emma McCormick - 100628622</li>
-                        <li>Aadil Vinod - 105700716</li>
                      </ul>
                   </li>
                </ul>
